@@ -89,7 +89,7 @@ struct Hypers
   # scale::Int
   function Hypers(td::TrainData; m = 50, k = 2,
     ν = 3.0, q = 0.9, α = 0.95, β = 2.0,
-    sigma_noninf = true,
+    sigma_noninf = false,
     hard = true, λmean = 0.1, λfix = false,
     init_trees = "leaf", init_depth = ones(4),
     sparse = false, shape = 1.0, a = 0.5, b = 1.0
